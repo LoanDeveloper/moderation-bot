@@ -1,0 +1,22 @@
+services:
+  app:
+    build: ./api
+    container_name: moderation_api
+    ports:
+      - 8080:80
+    command: 
+      - fastapi 
+      - dev 
+      - app/main.py 
+      - --port 
+      - "80"
+      - --host 
+      - "0.0.0.0"
+
+  bot:
+    build: ./bot
+    container_name: moderation_bot
+    depends_on:
+      - api
+    env_file:
+      - .env
