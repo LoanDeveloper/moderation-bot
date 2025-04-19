@@ -12,6 +12,3 @@ Développer un bot Discord de modération capable de :
 
 Les fonctionnalités doivent être implémentées avec LangChain dans une API REST FastAPI. Discord.py doit servir de client. Vous devez déployer ça avec Docker.
 
-M'envoyer le lien du git par mail à l'adresse.
-julien@oppliger.pro
-Me donner votre nom et prénom en sujet du mail.
